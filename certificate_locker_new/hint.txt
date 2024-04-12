@@ -1,0 +1,6 @@
+import pytesseract
+
+
+install tesseract ocr
+
+

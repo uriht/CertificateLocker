@@ -1,0 +1,173 @@
+<html>
+
+  <head>
+    <title>Certificate Locker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../static/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../static/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="../static/css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../static/css/style.css">
+
+  </head>
+
+  <body>
+
+    
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+
+      <header class="site-navbar site-navbar-target" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+            <div class="col">
+              <div class="site-logo">
+                <a href="index.html"><strong>Certificate Owner</strong></a>
+              </div>
+            </div>
+
+            <div class="col-9 text-right text-lg-left">
+              
+              <span class="d-inline-block d-lg-none"><a href="#" class=" site-menu-toggle js-menu-toggle py-5 "><span class="icon-menu h3 text-black"></span></a></span>
+
+              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                  <li class="active"><a href="/" class="nav-link">Home</a></li>
+                  
+                  <!--<li><a href="/user_status" class="nav-link">Status</a></li>-->
+				  
+                </ul>
+              </nav>
+            </div>
+
+            
+          </div>
+        </div>
+
+      </header>
+
+      
+     
+  <p></p>
+  <p></p>
+
+
+      <div class="site-section bg-light">
+        <div class="container">
+          <div class="mb-5 text-center">
+            <h2 class="section-heading"><strong class="text-black"> </strong></h2>
+            <p class="mb-5"></p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mb-5">
+              
+              <div class="practicing">
+                <div class="practicing-inner">
+                  <div class="wrap-icon">
+                    <span class="flaticon-house"></span>
+                  </div>
+                  <h3></h3>
+				  
+				 
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 mb-5">
+              <div class="practicing">
+               
+                  
+                  
+                  <form class="book-form" name="form1" method="post" enctype="multipart/form-data">
+                    <h3>Certificate</h3>
+					
+					
+                    <div class="row align-items-center">
+                     
+					 
+					  
+					  <div class="mb-3 mb-md-4 col-md-12">
+					  
+					  <div class="mb-3 mb-md-4 col-md-12">
+					  <label>Certificate Key</label>
+                        <input type="password" name="key" class="form-control">
+                      </div>
+					 
+                     
+                      <div class="col-md-12">
+                        <input type="submit" name="btn" value="Submit" class="btn btn-primary btn-block py-3">
+                      </div>
+                    </div>
+					<div style="color:#FF0000">{{msg}}</div>
+                  </form>
+               {% if act=="yes" %}
+			   <h3 align="center"></h3>
+				
+			<p align="center">
+			<a href="../static/decrypted/{{fname}}" target="_blank"><img src="../static/decrypted/{{fname}}" width="300" height="300"></a>
+			</p>
+				{% elif act=="no" %}
+				<span style="color:#FF0000">Wrong Key!</span>
+				{% elif act=="denied" %}
+				<span style="color:#FF0000">Access Denied!</span>
+			   {% endif %}
+			   
+			   
+              </div>
+            </div>
+            
+		
+			
+          
+		  
+        </div>
+      </div>
+      
+     
+    
+
+      
+   
+
+    </div>
+
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/jquery.sticky.js"></script>
+    <script src="../static/js/jquery.waypoints.min.js"></script>
+    <script src="../static/js/jquery.animateNumber.min.js"></script>
+    <script src="../static/js/jquery.fancybox.min.js"></script>
+    <script src="../static/js/jquery.easing.1.3.js"></script>
+    <script src="../static/js/bootstrap-datepicker.min.js"></script>
+    <script src="../static/js/aos.js"></script>
+
+    <script src="../static/js/main.js"></script>
+
+  </body>
+
+</html>
+
